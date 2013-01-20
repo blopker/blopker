@@ -1,9 +1,5 @@
 @import "compass_twitter_bootstrap";
 
-html{
-  background-color: $grayLighter;
-}
-
 .container {
   margin-top: 60px;
   margin-bottom: 20px;
@@ -16,6 +12,9 @@ html{
 
 header{
   padding-bottom: 5px;
+  .btn{
+    margin-left: 10px;
+  }
   .source{
     margin-top:45px;
     float:right;

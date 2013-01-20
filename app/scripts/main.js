@@ -12,6 +12,6 @@ require.config({
 require(['app', 'jquery'], function(app, $) {
   'use strict';
   $(function() {
-    $('body').fadeIn(1000);
+    app.run();
   });
 });

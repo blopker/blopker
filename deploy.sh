@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 yeoman build
-scp -r dist/* gouda@blopker.com:public/production/blopker
+rsync -ahvc --delete dist/* gouda@blopker.com:public/production/blopker
