@@ -1,5 +1,9 @@
 @import "compass_twitter_bootstrap";
 
+body{
+  min-width: 1080px;
+}
+
 .container {
   margin-top: 60px;
   margin-bottom: 20px;
@@ -21,18 +25,13 @@ header{
   }
 }
 
-article{
-  .title{
-    text-transform: uppercase;
-  }
-}
-
 section{
   padding-bottom: 20px;
   .title{
     font-weight: bold;
   }
   .date{
+    font-weight: normal;
     float: right;
     font-style:italic ;
   }

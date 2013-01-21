@@ -15,13 +15,14 @@
 //     app.run();
 //   });
 // });
+;(function($) {
+  'use strict';
+  $(function() {
+    $('body').find('*').hide();
+    $('body').fadeIn(1000);
 
-'use strict';
-$(function() {
-  $('body').find('*').hide();
-  $('body').fadeIn(1000);
-
-  $('body').find('*').each(function(index) {
-    $(this).fadeIn(index*50);
+    $('body').find('*').each(function(index) {
+      $(this).fadeIn(index*50);
+    });
   });
-});
+})(jQuery);
