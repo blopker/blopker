@@ -48,16 +48,28 @@ footer{
   margin-bottom: 20px;
 }
 
+.print-links{
+  display: none !important;
+}
+
 @media print{
   .container{
     margin-top: 0px !important;
   }
 
   footer{
-    display: none;
+    margin-bottom: 0 !important;
+  }
+
+  .print-links{
+    margin-top: 45px;
+    display: inline-block !important;
+    div{
+      float: right;
+    }
   }
 
   .btn{
-    display: none;
+    display: none !important;
   }
 }
