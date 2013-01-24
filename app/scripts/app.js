@@ -5,7 +5,7 @@ define(['jquery'], function($) {
     $('body').fadeIn(1000);
 
     $('body').find('*').each(function(index) {
-      $(this).fadeIn(index*50);
+      $(this).fadeIn(index * 20);
     });
   }
   return {
