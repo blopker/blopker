@@ -26,3 +26,11 @@
     });
   });
 })(jQuery);
+
+// Track external links
+;(function($, GA) {
+  'use strict';
+  $('a').click(function() {
+    GA.push(['_trackEvent', 'Link Event', this.innerText, this.href]);
+  });
+})(jQuery, _gaq);
