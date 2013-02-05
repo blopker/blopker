@@ -28,6 +28,6 @@
 })(jQuery);
 
 // Track external links
-  $('a').click(function() {
-    _gaq.push(['_trackEvent', 'Link Event', this.innerText, this.href]);
-  });
+$('a').click(function() {
+  _gaq.push(['_trackEvent', 'Link Event', this.innerText, this.href]);
+});
