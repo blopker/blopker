@@ -16,6 +16,12 @@ body{
 
 header{
   padding-bottom: 5px;
+  h1{
+    a:link {color:#000;}      /* unvisited link */
+    a:visited {color:#000;}  /* visited link */
+    a:hover {color:#000;}  /* mouse over link */
+    a:active {color:#000;}  /* selected link */
+  }
   .btn{
     margin-left: 10px;
   }
@@ -54,7 +60,9 @@ footer{
 
 @media print{
   .container{
-    margin-top: 0px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    box-shadow: none;
   }
 
   footer{
