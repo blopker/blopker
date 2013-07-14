@@ -4981,6 +4981,10 @@ body {
   line-height: 130%;
 }
 
+/* line 64, ../_assets/sass/app.scss */
+nav {
+  padding-bottom: 20px;
+}
 /* line 66, ../_assets/sass/app.scss */
 nav .inline-list {
   margin-bottom: 0;
