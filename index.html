@@ -1,0 +1,164 @@
+---
+layout: default
+title: Resume
+objective: Utilize mathematics and computer science to improve quality of life.
+
+schools:
+    - name: University of California, Santa Barbara
+      degree: M.S., Computer Science
+      date: Graduated 2013
+      comments:
+        - "GPA: 3.84"
+        - Focus in distributed, scalable systems and web technologies.
+    - name: University of California, Merced
+      degree: B.S., Applied Mathematics and Physics
+      date: Graduated 2010
+      comments:
+        - "Major GPA: 3.5"
+        - Dean's List
+
+knowledge:
+    os: Microsoft Windows and Linux
+    languages: Python, Java, JavaScript/HTML/CSS, C/C++, and Bash
+    frameworks:
+        - name: Java
+          desc: Play, Google Web Toolkit, Hadoop, RMI, and Android
+        - name: Python
+          desc: Flask, virtualenv, lxml, matplotlib, and numpy
+        - name: JavaScript
+          desc: jQuery/Zepto, VideoJS, Node, RequireJS, and Modernizr
+        - name: C/C++
+          desc: Armadillo, ACML, and Cilk
+
+experience:
+    - loc: "Blue Gouda - Santa Barbara, CA"
+      positions:
+        - position: Web Developer and Co-Founder
+          desc: Write JavaScript, server and client. Systems administrator. Accounting. Janitor.
+          date: 2012 - Current
+    - loc: "QAD Inc. - Limerick, Ireland"
+      positions:
+        - position: Performance Tester
+          desc: Performance testing SAAS applications. Used tools like JMeter and vmstat to write performance assessments.
+          date: Summer 2012
+    - loc: "UCSB - Santa Barbara, CA"
+      positions:
+        - position: Bioinformatics Researcher
+          desc: "Adapted bioinformatics tools for parallel use on large clusters, system administration. Co-Author of 'Osiris: Accessible and reproducible phylogenetic and phylogenomic analyses within the Galaxy workflow management system'"
+          date: 2011 - 2012
+    - loc: "LCOGT - Santa Barbara, CA"
+      positions:
+        - position: Web Application Developer
+          desc: A web app for viewing and analyzing astronomy images. Was designed to be used by both students and professional astronomers.
+          date: 2010 - 2011
+    - loc: "UC Merced - Merced, CA"
+      positions:
+        - position: Curriculum Assistant
+          desc: Developed a mathematical modeling capstone course. Wrote COMSOL primers for modeling PDEs.
+          date: 2010
+        - position: Researcher
+          desc: Designed and implemented an Arduino based model validation solution. Used to optimize wood burning stoves for 3rd world countries.
+          date: 2009-2010
+        - position: Information Technology
+          desc: Designed and implemented a new network infrastructure for Merced's battered women's shelter. Received community service award.
+          date: 2008-2009
+---
+
+
+<section class="row objective">
+    <div class="small-2 columns">
+        Objective:
+    </div>
+    <div class="small-10 columns">
+        {{ page.objective }}
+    </div>
+</section>
+
+<section class="row education">
+    <div class="small-2 columns">
+        Education:
+    </div>
+    <div class="small-10 columns">
+        {% for school in page.schools %}
+        <article class="row">
+            <div class="small-9 columns">
+            <div class="title">
+                {{school.degree}}
+            </div>
+            <div>
+                {{school.name}}
+            </div>
+            {% for comment in school.comments %}
+            <div>
+                {{comment}}
+            </div>
+            {% endfor %}
+            </div>
+            <div class="small-3 columns date">
+                {{school.date}}
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="row knowledge">
+    <div class="small-2 columns">
+        Knowledge:
+    </div>
+    <div class="small-10 columns">
+        <article>
+            <div class="title">Operating Systems</div>
+            <div>
+                {{ page.knowledge.os }}
+            </div>
+        </article>
+        <article>
+            <div class="title">Languages</div>
+            <div>
+                {{ page.knowledge.languages }}
+            </div>
+        </article>
+        <article>
+            <div class="title">Frameworks and Libraries</div>
+            {% for language in page.knowledge.frameworks %}
+            <div class="row">
+            <div class="small-2 columns">
+                {{ language.name }}
+            </div>
+            <div class="small-10 columns">
+                {{ language.desc }}
+            </div>
+            </div>
+            {% endfor %}
+        </article>
+    </div>
+</section>
+
+<section class="row experience">
+    <div class="small-2 columns">
+        Experience:
+    </div>
+    <div class="small-10 columns">
+        {% for loc in page.experience %}
+            <div>
+                {{loc.loc}}
+            </div>
+            {% for pos in loc.positions %}
+            <article class="row">
+                <div class="small-9 columns">
+                <div class="title">
+                    {{pos.position}}
+                </div>
+                <div>
+                    {{pos.desc}}
+                </div>
+                </div>
+                <div class="small-3 columns date">
+                    {{pos.date}}
+                </div>
+            </article>
+            {% endfor %}
+        {% endfor %}
+    </div>
+</section>

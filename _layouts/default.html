@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bo Lopker (blopker) - {{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Karl Bo Lopker's Resume, blopker, Computer Science UCSB">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/app.css">
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      var pluginUrl =
+      '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+      _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+
+      _gaq.push(['_setAccount', 'UA-29210503-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+  </head>
+    <body>
+      <script type="text/javascript">
+        // var body = document.getElementsByTagName('body');
+        // body[0].style.display="none";
+      </script>
+      <div class="container">
+        <header class="row">
+          <div class="small-5 columns">
+            <h1>Bo Lopker</h1>
+            <div class="email">
+              klop<span class="hide"></span>ker@cs.ucsb.edu
+            </div>
+          </div>
+          <nav class="small-7 columns links">
+              <ul class="inline-list hide-on-print">
+                <li>
+                  <a title="Projects" href="projects.html">
+                    <i class="icon-folder-open icon-2x"></i>
+                  </a>
+                </li>
+                <li>
+                  <a title="Github" href="https://github.com/blopker">
+                    <i class="icon-github-alt icon-2x"></i>
+                  </a>
+                </li>
+                <li>
+                  <a title="Linkedin" href="http://www.linkedin.com/in/blopker">
+                    <i class="icon-linkedin icon-2x"></i>
+                  </a>
+                </li>
+              </ul>
+            <div class="print-only">
+                <div>LinkedIn: http://www.linkedin.com/in/blopker/</div>
+                <div>GitHub: https://github.com/blopker</div>
+                <div>Projects: blopker.com/projects.html</div>
+            </div>
+          </nav>
+          <hr>
+        </header>
+        <div class="content">
+          {{ content }}
+        </div>
+      </div> <!-- /container -->
+      <footer>
+      Homespun with zeal by blopker. <a class="hide-on-print" target="_blank" href="https://github.com/blopker/blopker.com">Source</a><span class="print-only"> (https://github.com/blopker/blopker.com)</span>.
+      </footer>
+    </body>
+</html>

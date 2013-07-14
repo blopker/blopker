@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
-yeoman build
-rsync -ahvc --delete dist/* gouda@blopker.com:public/production/blopker
+compass compile
+jekyll build
+rsync -ahvc --delete _site/* gouda@blopker.com:public/production/blopker
