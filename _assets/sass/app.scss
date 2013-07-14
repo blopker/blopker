@@ -49,7 +49,6 @@
 // Font Awesome
 @import "font-awesome/font-awesome";
 
-
 /*****************************************************************************/
 /*
 /* Common by Bo Lopker
@@ -80,12 +79,15 @@ nav{
     }
     // Stolen colors from: http://www.colourlovers.com/palette/1930/cheer_up_emo_kid
     li:nth-child(1){
-        background: #4ECDC4;
+        background: #556270;
     }
     li:nth-child(2){
-        background: #C7F464;
+        background: #4ECDC4;
     }
     li:nth-child(3){
+        background: #C7F464;
+    }
+    li:nth-child(4){
         background: #FF6B6B;
     }
 }
@@ -98,6 +100,12 @@ section{
 
 article{
     padding-bottom: 20px;
+    p{
+        margin-bottom: 0 !important;
+    }
+    .tech{
+        font-style:italic;
+    }
 }
 
 .date{
