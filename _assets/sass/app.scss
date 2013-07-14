@@ -71,12 +71,18 @@ nav{
     a{
         padding-top: .3em;
         color: white;
-        width: 4em;
-        height: 4em;
+        width: 3.5em;
+        height: 3.5em;
         text-align: center;
         vertical-align: middle;
         display: table-cell;
     }
+
+    // Icon center fixes
+    .icon-fighter-jet:before{
+        margin-bottom: 5px;
+    }
+
     // Stolen colors from: http://www.colourlovers.com/palette/1930/cheer_up_emo_kid
     li:nth-child(1){
         background: #556270;
