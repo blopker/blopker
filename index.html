@@ -65,28 +65,28 @@ experience:
 ---
 
 
-<section class="row objective">
-    <div class="small-2 columns">
+<section class="objective">
+    <div>
         Objective
     </div>
-    <div class="small-10 columns">
+    <div>
         {{ page.objective }}
     </div>
 </section>
 
-<section class="row education">
-    <div class="small-2 columns">
+<section class="education">
+    <div>
         Education
     </div>
-    <div class="small-10 columns">
+    <div>
         {% for school in page.schools %}
-        <article class="row">
-            <div class="small-9 columns">
-            <div class="title">
-                {{school.degree}}
-            </div>
+        <div>
+          {{school.name}}
+        </div>
+        <article>
             <div>
-                {{school.name}}
+            <div class="title">
+            {{school.degree}}
             </div>
             {% for comment in school.comments %}
             <div>
@@ -94,7 +94,7 @@ experience:
             </div>
             {% endfor %}
             </div>
-            <div class="small-3 columns date">
+            <div class="date">
                 {{school.date}}
             </div>
         </article>
@@ -102,11 +102,11 @@ experience:
     </div>
 </section>
 
-<section class="row knowledge">
-    <div class="small-2 columns">
+<section class="knowledge">
+    <div>
         Knowledge
     </div>
-    <div class="small-10 columns">
+    <div>
         <article>
             <div class="title">Operating Systems</div>
             <div>
@@ -119,14 +119,14 @@ experience:
                 {{ page.knowledge.languages }}
             </div>
         </article>
-        <article>
+        <article class="frameworks">
             <div class="title">Frameworks and Libraries</div>
             {% for language in page.knowledge.frameworks %}
-            <div class="row">
-            <div class="small-2 columns">
+            <div>
+            <div class="name">
                 {{ language.name }}
             </div>
-            <div class="small-10 columns">
+            <div class="desc">
                 {{ language.desc }}
             </div>
             </div>
@@ -135,18 +135,18 @@ experience:
     </div>
 </section>
 
-<section class="row experience">
-    <div class="small-2 columns">
+<section class="experience">
+    <div>
         Experience
     </div>
-    <div class="small-10 columns">
+    <div>
         {% for loc in page.experience %}
             <div>
                 {{loc.loc}}
             </div>
             {% for pos in loc.positions %}
-            <article class="row">
-                <div class="small-9 columns">
+            <article>
+                <div>
                 <div class="title">
                     {{pos.position}}
                 </div>
@@ -154,7 +154,7 @@ experience:
                     {{pos.desc}}
                 </div>
                 </div>
-                <div class="small-3 columns date">
+                <div class="date">
                     {{pos.date}}
                 </div>
             </article>

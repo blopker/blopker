@@ -61,8 +61,6 @@ body{
 }
 
 nav{
-    padding-bottom: 20px;
-
     .inline-list{
         margin-bottom: 0;
         margin-top: 1.5em;
@@ -72,6 +70,7 @@ nav{
             width: 3.5em;
             height: 3.5em;
             padding-top: .7em;
+            margin-bottom: .3em;
             color: white;
         }
 
@@ -96,9 +95,18 @@ nav{
     }
 }
 
-
 section{
     padding-top: 20px;
+    @include grid-row;
+
+}
+
+section > div:nth-child(1){
+    @include grid-column(2);
+}
+
+section > div:nth-child(2){
+    @include grid-column(10);
 }
 
 article{
@@ -108,6 +116,28 @@ article{
     }
     .tech{
         font-style:italic;
+    }
+}
+
+.education, .experience{
+    article{
+        @include grid-row;
+    }
+    article > div:nth-child(1){
+        @include grid-column(9);
+    }
+    article > div:nth-child(2){
+        @include grid-column(3);
+    }
+}
+
+.frameworks > div{
+    @include grid-row;
+    .name{
+        @include grid-column(2);
+    }
+    .desc{
+        @include grid-column(10);
     }
 }
 
