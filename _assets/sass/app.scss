@@ -13,9 +13,9 @@
 @import "foundation/components/global"; // *always required
 @import "foundation/components/grid";
 @import "foundation/components/visibility";
-@import "foundation/components/block-grid";
+// @import "foundation/components/block-grid";
 @import "foundation/components/type";
-@import "foundation/components/buttons";
+// @import "foundation/components/buttons";
 // @import "foundation/components/forms"; // *requires components/buttons
 // @import "foundation/components/custom-forms"; // *requires components/buttons, components/forms
 // @import "foundation/components/button-groups"; // *requires components/buttons
@@ -62,41 +62,38 @@ body{
 
 nav{
     padding-bottom: 20px;
-.inline-list{
-    margin-bottom: 0;
-    margin-top: 1.5em;
-    li{
-        border-radius: 50%;
-    }
-    a{
-        padding-top: .3em;
-        color: white;
-        width: 3.5em;
-        height: 3.5em;
-        text-align: center;
-        vertical-align: middle;
-        display: table-cell;
-    }
 
-    // Icon center fixes
-    .icon-fighter-jet:before{
-        margin-bottom: 5px;
-    }
+    .inline-list{
+        margin-bottom: 0;
+        margin-top: 1.5em;
 
-    // Stolen colors from: http://www.colourlovers.com/palette/1930/cheer_up_emo_kid
-    li:nth-child(1){
-        background: #556270;
+        .circle{
+            border-radius: 50%;
+            width: 3.5em;
+            height: 3.5em;
+            padding-top: .7em;
+            color: white;
+        }
+
+        a{
+            color: $header-font-color;
+            text-align: center;
+        }
+
+        // Stolen colors from: http://www.colourlovers.com/palette/1930/cheer_up_emo_kid
+        a[title="Home"] .circle{
+            background: #556270;
+        }
+        a[title="Projects"] .circle{
+            background: #4ECDC4;
+        }
+        a[title="Github"] .circle{
+            background: #C7F464;
+        }
+        a[title="Linkedin"] .circle{
+            background: #FF6B6B;
+        }
     }
-    li:nth-child(2){
-        background: #4ECDC4;
-    }
-    li:nth-child(3){
-        background: #C7F464;
-    }
-    li:nth-child(4){
-        background: #FF6B6B;
-    }
-}
 }
 
 
