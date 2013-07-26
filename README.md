@@ -5,8 +5,9 @@ My resume site
 
 Usage
 -----
-Built with Jekyll. To build run:
+Built with Jekyll and compass. To build run:
 
-  jekyll build
+    compass compile
+    jekyll build
 
 Send me a message if you're hiring!
