@@ -1,14 +1,12 @@
 My resume site
 ================
 
-### [blopker.com](blopker.com)
+### [blopker.com](http://blopker.com)
 
 Usage
 -----
-Site is built with Yeoman (overkill, yeah I know...)
+Built with Jekyll. To build run:
 
-To build, install [Yeoman](http://yeoman.io/) and run
-
-	yeoman server
+  jekyll build
 
 Send me a message if you're hiring!
