@@ -2,4 +2,4 @@
 
 compass compile
 jekyll build
-rsync -ahvc --delete _site/* gouda@blopker.com:public/production/blopker
+rsync -ahvc _site/* gouda@blopker.com:public/production/blopker
