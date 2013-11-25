@@ -74,12 +74,14 @@ nav{
             padding-top: .7em;
             margin-bottom: .3em;
             color: white;
-            
+            @include transition-timing-function(ease-out);
+            @include transition-duration(.2s);
+
             &:hover{
                 @include scale(.85);
                 @include transition-duration(.2s);
                 @include transition-timing-function(ease-in);
-            }   
+            }
         }
 
         a{
@@ -164,5 +166,6 @@ article{
 
 footer{
     text-align: center;
-    color: lighten($header-font-color, 40%)
+    color: lighten($header-font-color, 40%);
+    margin-bottom: 20px;
 }
