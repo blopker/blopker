@@ -75,7 +75,7 @@ nav{
             margin-bottom: .3em;
             color: white;
             @include transition-timing-function(ease-out);
-            @include transition-duration(.2s);
+            @include transition-duration(.05s);
 
             &:hover{
                 @include scale(.85);

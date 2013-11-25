@@ -1,35 +1,9 @@
 ---
 layout: default
 title: Projects
-projects:
-    - name: Pheme
-      short: Realtime web console for distributed systems
-      link: "[Project site](https://github.com/blopker/Pheme/wiki) | [Source](https://github.com/blopker/Pheme)"
-      long: Pheme gets its name from the Greek goddess of "scandalous rumors". She has also been described as "she who initiates and furthers communication". This project aims to facilitate communication between users and distributed compute farms. To do this Pheme allows non-technical users to control these systems through their browsers. Pheme will start life packaged with the distributed graph processing system jPregel, but it is designed to work with any distributed system. Pheme has an adapter architecture that can hook seamlessly into any communication protocol.
-      tech: Java and Scala, Play Framework 2.1, Websockets, Google's Guava Eventbus, Twitter Bootstrap, RMI (for jPregel communication)
-    - name: WAMPlay
-      short: RPC/PubSub Websocket library for the Play framework
-      link: "[Project site](https://github.com/blopker/WAMPlay)"
-      long: WAMPlay is a WAMP implementation for the Play! Framework. Use it to add RPC and Pub/Sub websocket functionality to your Play site! Made to power Pheme.
-      tech: Java and Scala, Play Framework 2.1, Websockets.
-    - name: Powwow Puzzler
-      short: Transmission power impact on congested network throughput
-      link: "[Paper (PDF)](https://github.com/blopker/Wifi-Congestion-Test/blob/master/PowwowPuzzler.pdf?raw=true) | [Source](https://github.com/blopker/Wifi-Congestion-Test)"
-      long: Using 9 Android devices and 3 wireless APs we tested how antennae power affected wireless throughput. To accomplish this, we wrote an Android app that can send and receive UDP packets with a Java application on our server. We then varied transmission power on the devices and monitored total network throughput. Then we made recommendations on our findings.
-      tech: Java, UDP Sockets, DD-WRT, 802.11, Android, Load Testing
-    - name: QR Live
-      short: Augmented reality QR code interaction for Android
-      link: "[Project site](http://qrlive.bluegouda.com/) | [Source](https://github.com/blopker/QRlive)"
-      long: QR Live aims to consume QR codes as naturally as possible. This Android app first reads QR codes then recreates the code as a clean digital image. Then using augmented reality feature detection algorithms like GFTT (Good Features To Track) QR Live tracks the code in real time while overlaying the code's decoded information. Although this app is currently unfinished it is a good example of using AR technology to track arbitrary markers.
-      tech: Android, ZXing, OpenCV, Augmented Reality
-    - name: KDD Music Recommender
-      short: Hadoop based music recommendation system
-      link: "[Paper (PDF)](https://github.com/blopker/KDD-Music-Recommender-MapReduce/blob/master/CS290NKNNMapReduceFinalPaper.pdf?raw=true) | [Source](https://github.com/blopker/KDD-Music-Recommender-MapReduce)"
-      long:  A music reccomendation system for the Yahoo KDD cup. Used the K nearest neighbor algorithm on several gigabytes of music data to suggest new songs to users. Hadoop took care of parallelization and scaling.
-      tech: Hadoop, Java, args4j, Data Mining, Machine Learning
 ---
 
-{% for project in page.projects %}
+{% for project in site.data.projects %}
 <section class="projects">
     <div class="name">
         {{ project.name }}

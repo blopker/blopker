@@ -2,71 +2,6 @@
 layout: default
 title: Resume
 objective: Create software that makes life a little better.
-
-schools:
-    - name: University of California, Santa Barbara
-      degree: M.S., Computer Science
-      date: Graduated 2013
-      comments:
-        - "GPA: 3.84"
-        - Focus in distributed, scalable systems and web technologies.
-    - name: University of California, Merced
-      degree: B.S., Applied Mathematics and Physics
-      date: Graduated 2010
-      comments:
-        - "Major GPA: 3.5"
-        - Dean's List
-
-knowledge:
-    os: Microsoft Windows and Linux
-    languages: Python, Java, JavaScript/HTML/CSS, C/C++, Matlab and Bash
-    frameworks:
-        - name: Java
-          desc: Play, Google Web Toolkit, Hadoop, RMI, and Android
-        - name: Python
-          desc: Flask, virtualenv, lxml, matplotlib, and numpy
-        - name: JavaScript
-          desc: jQuery/Zepto, VideoJS, Node, RequireJS, and Modernizr
-        - name: C/C++
-          desc: Armadillo, ACML, and Cilk
-
-experience:
-    - loc: "23andMe - Palo Alto, CA"
-      positions:
-        - position: Software Engineer
-          desc: Javascript, Python, SCSS and HTML.
-          date: 2013 - Current
-    - loc: "Blue Gouda - Santa Barbara, CA"
-      positions:
-        - position: Systems Architect and Co-Founder
-          desc: Built JavaScript, Java, and Python services for clients. Linux systems administrator for both clients and internal servers. Security analysis for existing systems.
-          date: 2012 - 2013
-    - loc: "QAD Inc. - Limerick, Ireland"
-      positions:
-        - position: Performance Tester
-          desc: Performance testing of SAAS services. Used tools like JMeter and vmstat to find and eliminate bottlenecks. Created webapp to simplify performance workflow. Worked with vendors to make testing proprietary protocols easier.
-          date: Summer 2012
-    - loc: "UCSB - Santa Barbara, CA"
-      positions:
-        - position: Bioinformatics Researcher
-          desc: "Adapted bioinformatics tools for parallel use on large clusters and system administration. Used BioPython, HMMER, BLAST, NumPy and PostgreSQL to build phylogenetic trees. Co-Author of 'Osiris: Accessible and reproducible phylogenetic and phylogenomic analyses within the Galaxy workflow management system'"
-          date: 2011 - 2012
-    - loc: "LCOGT - Santa Barbara, CA"
-      positions:
-        - position: Web Application Developer
-          desc: Sole developer for a GWT web app for viewing and analyzing astronomy images. Designed to be used by both students and professional astronomers. Worked closely with astronomers to refine features.
-          date: 2010 - 2011
-    - loc: "UC Merced - Merced, CA"
-      positions:
-        - position: Curriculum Assistant
-          desc: Developed a mathematical modeling capstone course. Wrote COMSOL primers for modeling PDEs.
-          date: 2010
-        - position: Researcher
-          desc: Designed and implemented an Arduino based model validation solution. Used to optimize wood burning stoves for 3rd world countries.
-          date: 2009-2010
-        - position: Information Technology
-          desc: Designed and implemented a new network infrastructure for Merced's battered women's shelter. Received community service award.
-          date: 2008-2009
 ---
 
 
@@ -84,7 +19,7 @@ experience:
         Education
     </div>
     <div>
-        {% for school in page.schools %}
+        {% for school in site.data.schools %}
         <div>
           {{school.name}}
         </div>
@@ -115,18 +50,18 @@ experience:
         <article>
             <div class="title">Operating Systems</div>
             <div>
-                {{ page.knowledge.os }}
+                {{ site.data.knowledge.os }}
             </div>
         </article>
         <article>
             <div class="title">Languages</div>
             <div>
-                {{ page.knowledge.languages }}
+                {{ site.data.knowledge.languages }}
             </div>
         </article>
         <article class="frameworks">
             <div class="title">Frameworks and Libraries</div>
-            {% for language in page.knowledge.frameworks %}
+            {% for language in site.data.knowledge.frameworks %}
             <div>
             <div class="name">
                 {{ language.name }}
@@ -145,7 +80,7 @@ experience:
         Experience
     </div>
     <div>
-        {% for loc in page.experience %}
+        {% for loc in site.data.experience %}
             <div>
                 {{loc.loc}}
             </div>
