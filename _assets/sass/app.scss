@@ -49,6 +49,8 @@
 // Font Awesome
 @import "font-awesome/font-awesome";
 
+@import "compass/css3";
+
 /*****************************************************************************/
 /*
 /* Common by Bo Lopker
@@ -72,6 +74,12 @@ nav{
             padding-top: .7em;
             margin-bottom: .3em;
             color: white;
+            
+            &:hover{
+                @include scale(.85);
+                @include transition-duration(.2s);
+                @include transition-timing-function(ease-in);
+            }   
         }
 
         a{
