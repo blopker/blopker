@@ -1,8 +1,13 @@
+- loc: "Synthego - Redwood City, CA"
+  positions:
+    - position: Software Engineer
+      desc: JavaScript, Python, Robots, Lasers, BioTech
+      date: 2015 - Current
 - loc: "23andMe - Palo Alto, CA"
   positions:
     - position: Software Engineer
-      desc: Javascript, Python, SCSS and HTML.
-      date: 2013 - Current
+      desc: JavaScript, Python, SCSS and HTML.
+      date: 2013 - 2015
 - loc: "Blue Gouda - Santa Barbara, CA"
   positions:
     - position: Systems Architect and Co-Founder
