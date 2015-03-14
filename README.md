@@ -16,4 +16,4 @@ compass watch
 jekyll serve --watch
 ```
 
-Licence MIT. Fork it!
+License MIT. Fork it!
