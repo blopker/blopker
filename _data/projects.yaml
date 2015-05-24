@@ -15,7 +15,7 @@
   tech: Java, UDP Sockets, DD-WRT, 802.11, Android, Load Testing
 - name: QR Live
   short: Augmented reality QR code interaction for Android
-  link: "[Project site](http://qrlive.bluegouda.com/) | [Source](https://github.com/blopker/QRlive)"
+  link: "[Project site](http://qrlive.blopker.com/) | [Source](https://github.com/blopker/QRlive)"
   long: QR Live aims to consume QR codes as naturally as possible. This Android app first reads QR codes then recreates the code as a clean digital image. Then using augmented reality feature detection algorithms like GFTT (Good Features To Track) QR Live tracks the code in real time while overlaying the code's decoded information. Although this app is currently unfinished it is a good example of using AR technology to track arbitrary markers.
   tech: Android, ZXing, OpenCV, Augmented Reality
 - name: KDD Music Recommender
