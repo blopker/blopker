@@ -1,104 +1,20 @@
 ---
 layout: default
 title: Resume
-objective: Create software that makes life a little better.
 ---
 
-
-<section class="objective">
-    <div>
-        Objective
-    </div>
-    <div>
-        {{ page.objective }}
-    </div>
-</section>
-
-<section class="education">
-    <div>
-        Education
-    </div>
-    <div>
-        {% for school in site.data.schools %}
-        <div>
-          {{school.name}}
+<div class="index">
+    <div class="index-content">
+        <h1>Bo Lopker</h1>
+        <h2>
+            <i>noun</i>
+        </h2>
+        <ol>
+            <li>one who builds to make life a little better.</li>
+        </ol>
+        <div class="also">
+            See also: <a href="https://github.com/blopker/">github</a>, <a href="https://www.linkedin.com/in/blopker">linkedin</a>
         </div>
-        <article>
-            <div>
-            <div class="title">
-            {{school.degree}}
-            </div>
-            {% for comment in school.comments %}
-            <div>
-                {{comment}}
-            </div>
-            {% endfor %}
-            </div>
-            <div class="date">
-                {{school.date}}
-            </div>
-        </article>
-        {% endfor %}
     </div>
-</section>
+</div>
 
-<section class="knowledge">
-    <div>
-        Knowledge
-    </div>
-    <div>
-        <article>
-            <div class="title">Operating Systems</div>
-            <div>
-                {{ site.data.knowledge.os }}
-            </div>
-        </article>
-        <article>
-            <div class="title">Languages</div>
-            <div>
-                {{ site.data.knowledge.languages }}
-            </div>
-        </article>
-        <article class="frameworks">
-            <div class="title">Frameworks and Libraries</div>
-            {% for language in site.data.knowledge.frameworks %}
-            <div>
-            <div class="name">
-                {{ language.name }}
-            </div>
-            <div class="desc">
-                {{ language.desc }}
-            </div>
-            </div>
-            {% endfor %}
-        </article>
-    </div>
-</section>
-
-<section class="experience">
-    <div>
-        Experience
-    </div>
-    <div>
-        {% for loc in site.data.experience %}
-            <div>
-                {{loc.loc}}
-            </div>
-            {% for pos in loc.positions %}
-            <article>
-                <div>
-                <div class="title">
-                    {{pos.position}}
-                </div>
-                <div>
-                    {{pos.desc}}
-                </div>
-                </div>
-                <div class="date">
-                    {{pos.date}}
-                </div>
-            </article>
-            {% endfor %}
-        {% endfor %}
-    </div>
-</section>

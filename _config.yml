@@ -1,2 +1,9 @@
-name: Your New Jekyll Site
-pygments: true
+title: Bo Lopker
+email: bo@kbl.io
+url: "https://blopker.com"
+
+# Build settings
+markdown: kramdown
+
+sass:
+    style: compressed

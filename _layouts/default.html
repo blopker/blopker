@@ -1,90 +1,25 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Bo Lopker (blopker) - {{ page.title }}</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Karl Bo Lopker's Resume, blopker, Computer Science UCSB">
-
-    <link rel="stylesheet" href="/css/app.css">
-
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      var pluginUrl =
-      '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-      _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-
-      _gaq.push(['_setAccount', 'UA-29210503-2']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-
-  </head>
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Bo Lopker (blopker) - {{ page.title }}</title>
+        <meta name="description" content="Karl Bo Lopker's Resume, blopker, Computer Science UCSB">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Istok+Web:400,400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/css/app.css">
+    </head>
     <body>
-      <div class="container">
-        <header class="row">
-          <div class="small-4 columns">
-            <h1>Bo Lopker</h1>
-            <div class="email">
-              b<span class="hide">hi</span>o@kbl.io
-            </div>
-          </div>
-          <nav class="small-8 columns links">
-              <ul class="inline-list hide-on-print">
-                <li>
-                  <a title="Home" href="/">
-                    <div class="circle">
-                      <i class="icon-trophy icon-2x"></i>
-                    </div>
-                    EXP
-                  </a>
-                </li>
-                <li>
-                  <a title="Projects" href="/projects">
-                    <div class="circle">
-                      <i class="icon-code-fork icon-2x"></i>
-                    </div>
-                    'jects
-                  </a>
-                </li>
-                <li>
-                  <a title="Github" href="https://github.com/blopker">
-                    <div class="circle">
-                      <i class="icon-github-alt icon-2x"></i>
-                    </div>
-                    Hub
-                  </a>
-                </li>
-                <li>
-                  <a title="Linkedin" href="http://www.linkedin.com/in/blopker">
-                    <div class="circle">
-                      <i class="icon-linkedin icon-2x"></i>
-                    </div>
-                    Lnkdn
-                  </a>
-                </li>
-              </ul>
-            <div class="print-only">
-                <div>LinkedIn: http://www.linkedin.com/in/blopker/</div>
-                <div>GitHub: https://github.com/blopker</div>
-                <div>Projects: blopker.com/projects</div>
-            </div>
-          </nav>
-          <hr>
-        </header>
         <div class="content">
           {{ content }}
         </div>
-      </div> <!-- /container -->
-      <footer>
-      Homespun with zeal by <a target="_blank" href="https://github.com/blopker">@blopker</a>. <br>
-      <a target="_blank" href="https://github.com/blopker/blopker.com">Source</a>.
-      </footer>
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-29210503-2','auto');ga('send','pageview');
+        </script>
     </body>
 </html>
