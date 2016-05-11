@@ -7,7 +7,7 @@ Usage
 -----
 Built with Jekyll. Install it with:
 ```
-gem install jekyll
+sudo gem install jekyll
 ```
 
 To build run:
