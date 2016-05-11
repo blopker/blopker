@@ -2,7 +2,5 @@ run:
 	jekyll serve
 
 deploy:
-	@git checkout gh-pages
-	@git rebase master
-	@git push origin gh-pages
-	@git checkout master
+	@jekyll build
+	@rsync -ahvc _site/* static@ssh.kbl.io:public/production/blopker
