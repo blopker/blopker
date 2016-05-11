@@ -1,5 +1,8 @@
-run:
-	jekyll serve
+build:
+	@jekyll build
+
+serve:
+	@jekyll serve
 
 deploy:
 	@jekyll build

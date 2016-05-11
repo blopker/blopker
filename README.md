@@ -5,13 +5,19 @@ My resume site
 
 Usage
 -----
-Built with Jekyll. To build run:
+Built with Jekyll. Install it with:
 ```
-jekyll build
+gem install jekyll
 ```
+
+To build run:
+```
+make build
+```
+
 To develop:
 ```
-jekyll serve
+make serve
 ```
 
 License MIT. Fork it!
