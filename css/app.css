@@ -1,15 +1,15 @@
----
----
-@import 'normalize';
-
-html, body, .content {
+html,
+body,
+.content {
   box-sizing: border-box;
   font-family: 'Cardo', serif;
   height: 100vh;
   color: #3E3E3E;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -52,4 +52,3 @@ footer {
   max-width: 400px;
   padding: 30px;
 }
-
