@@ -1,21 +1,11 @@
-My resume site
-================
+# My resume site
 
 ### [blopker.com](https://blopker.com)
 
-Usage
------
-Built with Jekyll. Install it with:
-```
-sudo gem install jekyll
-```
+## Usage
 
-To build run:
-```
-make build
-```
+Just HTML and CSS. Run:
 
-To develop:
 ```
 make serve
 ```
