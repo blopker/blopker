@@ -3,6 +3,7 @@ body,
 .content {
   box-sizing: border-box;
   font-family: 'Cardo', serif;
+  height: 100%;
   color: #3E3E3E;
   background-color: #FDFBF4;
 }
