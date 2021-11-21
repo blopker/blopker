@@ -3,18 +3,14 @@ body,
 .content {
   box-sizing: border-box;
   font-family: 'Cardo', serif;
-  height: 100vh;
   color: #3E3E3E;
+  background-color: #FDFBF4;
 }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit;
-}
-
-.content {
-  background-color: #FDFBF4;
 }
 
 h1 {
@@ -32,23 +28,13 @@ h3 {
   margin-bottom: 15px;
 }
 
-footer {
-  position: absolute;
-  text-align: center;
-  bottom: 0;
-  width: 100%;
-}
-
 .index {
+  display: grid;
+  place-items: center;
   height: 100%;
-  display: flex;
-  align-items: center;
-  min-height: 24em;
-  justify-content: center;
 }
 
 .index-content {
-  flex: none;
   max-width: 400px;
   padding: 30px;
 }
