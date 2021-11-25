@@ -38,7 +38,16 @@
           <div class="also">
             See also: <a href="https://github.com/blopker/">GitHub</a>,
             <a href="https://www.linkedin.com/in/blopker">Linkedin</a>,
-            <a href="https://github.com/blopker/DNA">My source code</a>
+            <a href="https://github.com/blopker/DNA">My source code</a>,
+            <script>
+              var part1 = "bo";
+              var part2 = Math.pow(2,6);
+              var part3 = String.fromCharCode(part2);
+              var part4 = "lopker.net";
+              var part5 = `${part1}${String.fromCharCode(part2)}${part4}`;
+              var part6 = "mai" + "lto:" + part5;
+              document.write(`<a href="${part6}">Email</a>`);
+            </script>
           </div>
         </div>
       </div>
